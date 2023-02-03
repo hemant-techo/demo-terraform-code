@@ -24,5 +24,6 @@ jobs:
     steps:
 # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Infracost Actions
+        shell: bash
         uses: infracost/actions@v2.1.0
 
