@@ -20,7 +20,7 @@ allow_stopping_for_update = true
 }
 
 resource "google_compute_instance" "tf-instance-2" {
-  name         = "tf-instance-2"
+  name         = "tf-instance-3"
   machine_type = "n2-standard-2"
 
   boot_disk {
