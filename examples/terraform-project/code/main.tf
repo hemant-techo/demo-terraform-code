@@ -21,10 +21,3 @@ module "instances" {
 module "storage" {
   source     = "./modules/storage"
 }
-
-terraform {
-  backend "gcs" {
-    bucket  = "<FILL IN PROJECT ID>"
- prefix  = "terraform/state"
-  }
-}
