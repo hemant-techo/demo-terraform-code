@@ -6,8 +6,6 @@ on:
     - main
   pull_request:
 
-env:
-  TF_ROOT= examples/terraform-project/code 
 jobs:
   terraform:
     name: 'Terraform'
@@ -17,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{ env.TF_ROOT }}
+        working-directory: examples/terraform-project/code
 
     steps:
     # Checkout the repository to the GitHub Actions runner
